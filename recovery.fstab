@@ -1,0 +1,28 @@
+# mount point	fstype		device		option
+#/sdcard   vfat   /dev/block/platform/sdhci.0/mmcblk1p1		
+/sdcard   vfat   /dev/block/mmcblk1p1 	          flags=display="Micro SDcard";wipeingui;removable
+/sdcard2  vfat   /dev/block/platform/sdhci.1/by-name/sdcard  flags=display="Internal SDcard";wipeingui
+/system	  ext4   /dev/block/platform/sdhci.1/by-name/system	
+/data	  ext4   /dev/block/platform/sdhci.1/by-name/userdata	length=-16384
+/cache	  ext4   /dev/block/platform/sdhci.1/by-name/cache	
+/misc	  emmc   /dev/block/platform/sdhci.1/by-name/misc	
+/boot	  emmc   /dev/block/platform/sdhci.1/by-name/boot	
+/recovery	emmc /dev/block/platform/sdhci.1/by-name/recovery	flags=backup=1;display="Recovery"
+/u-boot		emmc /dev/block/platform/sdhci.1/by-name/u-boot	
+/dt-blob	emmc /dev/block/platform/sdhci.1/by-name/dt-blob	
+/cp-boot	emmc /dev/block/platform/sdhci.1/by-name/cp-boot	
+/cp-image	emmc /dev/block/platform/sdhci.1/by-name/cp-image	
+/dsp-dram	emmc /dev/block/platform/sdhci.1/by-name/dsp-dram	
+/dsp-pram	emmc /dev/block/platform/sdhci.1/by-name/dsp-pram
+/sys-parm-ind	emmc /dev/block/platform/sdhci.1/by-name/sys-parm-ind	
+/parm-spml-ind	emmc /dev/block/platform/sdhci.1/by-name/parm-spml-ind	
+/ubootlogo	emmc /dev/block/platform/sdhci.1/by-name/ubootlogo	
+/abi	emmc	/dev/block/platform/sdhci.1/by-name/abi	
+/abi-sec	emmc /dev/block/platform/sdhci.1/by-name/abi-sec	
+/hwconf	emmc  /dev/block/platform/sdhci.1/by-name/hwconf	
+/loader	emmc  /dev/block/platform/sdhci.1/by-name/loader	
+/sys-parm-dep  emmc /dev/block/platform/sdhci.1/by-name/sys-parm-dep	
+/parm-spml-dep	emmc /dev/block/platform/sdhci.1/by-name/parm-spml-dep	
+/umts-cal	emmc /dev/block/platform/sdhci.1/by-name/umts-cal	
+/usb-otg   vfat     /devices/platform/3f120000.usb-otg/usb1          auto
+/usb-otg    vfat  /dev/block/sda1   /dev/block/sda       flags=display="USB-OTG";storage;wipeingui;removable
