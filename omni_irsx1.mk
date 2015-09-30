@@ -25,12 +25,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/omni/config/gsm.mk)
 
-PRODUCT_NAME := omni_magnum
-PRODUCT_DEVICE := magnum
+PRODUCT_NAME := omni_irsx1
+PRODUCT_DEVICE := irsx1
 PRODUCT_BRAND := lava
-PRODUCT_MODEL := X-604
+PRODUCT_MODEL := irsx1
 PRODUCT_MANUFACTURER := lava
 
 # Inherit from hardware-specific part of the product configuration
-$(call inherit-product, device/lava/magnum/device.mk)
-$(call inherit-product-if-exists, vendor/lava/magnum/magnum-vendor.mk)
+$(call inherit-product, device/lava/irsx1/device.mk)
+$(call inherit-product-if-exists, vendor/lava/irsx1/irsx1-vendor.mk)
